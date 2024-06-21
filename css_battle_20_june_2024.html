@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div></div>
+    <style>
+      * {
+        background: #f48b26;
+        position: relative;
+      }
+
+      div {
+        height: 338;
+        width: 352;
+        background: #feff58;
+        top: 42;
+        left: -10;
+        position: absolute;
+      }
+
+      div::after,
+      div::before {
+        content: "";
+        height: 50;
+        width: 250;
+        background: #f48b26;
+        position: absolute;
+        top: 50;
+        left: 202;
+      }
+
+      div::after {
+        top: 150;
+      }
+    </style>
+  </body>
+</html>
